@@ -1,0 +1,29 @@
+[project]
+name = "peerlogic-dental"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "fastapi>=0.115.14",
+    "numpy>=1.24.4",
+    "pandas>=2.0.3",
+    "pydantic>=2.10.6",
+    "scikit-learn>=1.3.2",
+    "transformers>=4.46.3",
+    "uvicorn>=0.33.0",
+    "python-multipart>=0.0.6",
+    "requests>=2.32.4",
+    "haversine>=2.5.0",
+    "zipcodes>=1.2.0",
+    "joblib>=1.2.0",
+    "optuna>=3.0.0",
+    "xgboost>=1.7.0",
+]
+
+[dependency-groups]
+dev = [
+    "matplotlib>=3.7.5",
+    "ipykernel>=6.29.5",
+    "seaborn>=0.13.2",
+]
