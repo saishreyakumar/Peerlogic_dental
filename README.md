@@ -25,6 +25,27 @@ Predicts no-show risk using machine learning models trained on historical patien
 - **Production Ready**: Professional FastAPI service with Docker deployment
 - **20+ Predictors**: Age, insurance, payment history, booking method, and more
 
+## Project Structure
+
+```
+Peerlogic_dental/
+├── api/                     # FastAPI REST service
+│   └── model_prediction.py  # Main API endpoints
+├── core/                    # ML pipeline & algorithms
+│   ├── features.py          # Feature engineering
+│   ├── prediction.py        # Prediction service
+│   └── training.py          # Model training & optimization
+├── common/
+│   ├── models.py            # Data models & schemas
+│   └── utils.py             # Helper functions
+├── scripts/                 # Training scripts
+│   └── model_training.py
+├── tests/                   # Tests
+├── models/                  # Saved model artifacts
+├── dental_no_show_prediction.ipynb  # Analysis notebook
+└── summary.md
+```
+
 ## Quick Start
 
 ### 1. Setup Environment
